@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --verde-destaque: #81FE88;
+    --verde-pastel: #BFFFC3;
+    --verde-petroleo: #132E35;
+    --grafite: #01080E;
+    --cinza-escuro: #171D1F;
+    --cinza: #3E3E3F;
+    --cinza-medio: #888888;
+    --cinza-claro: #BCBCBC;
+    --off-white: #E1E1E1;
+    --branco: #FFFFFF;
+
+    --fonte-prompt: "Prompt", serif;
+
+    --weight-medio: 500;
+    --weight-regular: 400;
+    --weight-semibold: 600;
+    --weight-light: 300;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--grafite);
+    font-family: var(--fonte-prompt);
+}
+
+.container_background {
+    display: flex;
+    flex-direction: column;
+    margin: 0 8.8rem;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.img_bg_left {
+    width: 20rem;
+}
+
+.img_bg_right {
+    width: 20rem;
+    float: right;
+    position: relative;
+    bottom: 0;
+}
+
+.container_main {
+    width: 996px;
+    height: 748px;
+    background-color: var(--cinza-escuro);
+    position: absolute;
+    left: 24%;
+    top: 15%;
+    border-radius: 32px;
+
+    display: flex;
+    gap: 23px;
+}
+
+.img_login {
+    width: 410px;
+    margin: 56px 0 56px 78px;
+
+}
+
+.container_form {
+    margin: 56px 78px 56px 0;
+    padding: 0 32px;
+}
+
+.container_form_titulos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.container_form_login {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-weight: var(--weight-semibold);
+    font-size: 31px;
+    color: var(--off-white);
+    line-height: 150%;
+}
+
+h5 {
+    color: var(--off-white);
+    font-weight: var(--weight-light);
+    font-size: 22px;
+    line-height: 150%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container_form_campos {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.container_form_campo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    line-height: 150%;
+    font-size: 18px;
+    color: var(--off-white);
+}
+
+.container_lembrar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#label_lembrar {
+    line-height: 150%;
+    color: var(--cinza-medio);
+    font-size: 15px;
+}
+
+.esqueci_senha {
+    text-decoration: underline;
+    font-weight: var(--weight-light);
+    font-size: 15px;
+    line-height: 150%;
+    color: var(--off-white);
+}
+
+.input {
+    max-width: 317.7px;
+    background-color: var(--cinza-medio);
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.input::placeholder {
+    color: var(--cinza);
+    font-family: var(--fonte-prompt);
+    font-size: 12.5px;
+}
+
+button {
+    background-color: var(--verde-destaque);
+    height: 51px;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-weight: var(--weight-semibold);
+    font-size: 18px;
+    margin: 24px 0 32px;
+}
+
+button img {
+    margin-left: 8px;
+}
+
+.outras_contas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+hr {
+    width: 40px;
+    height: .5px;
+}
+
+.outras_contas p {
+    color: var(--off-white);
+    font-size: 14px;
+    font-weight: var(--weight-light);
+
+}
+
+.container_outras_contas {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+}
+
+#img_gmail {
+    width: 32px;
+}
+
+.outra_conta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--off-white);
+}
+
+.outra_conta p {
+    margin-top: 4px;
+}
+
+.container_cadastro {
+    margin-top: 43px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.container_cadastro p {
+    color: var(--off-white);
+    font-weight: var(--weight-light);
+}
+
+.container_cadastro a {
+    color: var(--verde-destaque);
+    font-weight: var(--weight-medio);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 18px;
+    letter-spacing: .3px;
+}
+
+.container_cadastro a img {
+    position: relative;
+    top: -2px;
+} 
