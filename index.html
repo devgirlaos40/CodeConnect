@@ -22,13 +22,13 @@
             <img src="./img/Imagens Gerais/login_desktop.png" class="img_login"
                 alt="mulher negra de óculos digitando de frente pra um computador">
         </div>
-        <div class="container_form" >
+        <div class="container_form">
             <div class="container_form_login">
                 <div class="container_form_titulos">
                     <h2>Login</h2>
                     <h5>Boas-vindas! Faça seu login.</h5>
                 </div>
-                <form action="">
+                <!-- <form action=""> -->
                     <div class="container_form_campos">
                         <div class="container_form_campo">
                             <label for="user">E-mail ou Usuário</label>
@@ -49,8 +49,13 @@
                             <a href="#" class="esqueci_senha">Esqueci a senha</a>
                         </div>
                     </div>
-                    <button onclick="abrirFeed()">Login <img src="./img/Icones/PNG/arrow_forward.png" alt="icone de seta do botão de login"> </button>
-                </form>
+                    <button>
+                        <a href="./html/feed.html">
+                            Login
+                            <img src="./img/Icones/PNG/arrow_forward.png" alt="icone de seta do botão de login">
+                        </a>
+                    </button>
+                <!-- </form> -->
                 <div class="outras_contas">
                     <hr />
                     <p>ou entre com outras contas</p>
@@ -69,7 +74,8 @@
             </div>
             <div class="container_cadastro">
                 <p>Ainda não tem conta?</p>
-                <a href="./html/feed.html">Crie seu cadastro! <img src="./img/Icones/PNG/assignment.png" class="icone" alt="icone de formulario" /></a>
+                <a href="./html/signup.html">Crie seu cadastro! <img src="./img/Icones/PNG/assignment.png" class="icone"
+                        alt="icone de formulario" /></a>
             </div>
         </div>
     </main>
