@@ -8,37 +8,295 @@
     <title>Code Connect</title>
 </head>
 
-<body>
-    <aside>
-        <div>
+<body class="container">
+    <aside class="item sidebar">
             <img src="../img/Logo/Logo_small.png" alt="logo do code connect" class="aside_logo">
             <nav>
                 <ul class="aside_lista_itens">
                     <li><a href="#" class="link_publicar">Publicar</a></li>
-                        <li>
-                            <img src="../img/Icones/PNG/feed.png" alt="icone que representa o feed">
-                            <a href="#">Feed</a>
-                        </li>
-                        <li>
-                            <img src="../img/Icones/PNG/account_circle (1).png" alt="icone que representa o perfil do usuário">
-                            <a href="#">Perfil</a>
-                        </li>
-                        <li>
-                            <img src="../img/Icones/PNG/info (2).png" alt="icone que representa as informações sobre o Code Connect">
-                            <a href="#">Sobre Nós</a>
-                        </li>
-                        <li>
-                            <img src="../img/Icones/PNG/logout (2).png" alt="icone que representa a funcionalidade de logout">
-                            <a href="#">Sair</a>
-                        </li>
+                    <li>
+                        <img src="../img/Icones/PNG/feed.png" alt="icone que representa o feed">
+                        <a href="#">Feed</a>
+                    </li>
+                    <li>
+                        <img src="../img/Icones/PNG/account_circle (1).png"
+                            alt="icone que representa o perfil do usuário">
+                        <a href="#">Perfil</a>
+                    </li>
+                    <li>
+                        <img src="../img/Icones/PNG/info (2).png"
+                            alt="icone que representa as informações sobre o Code Connect">
+                        <a href="#">Sobre Nós</a>
+                    </li>
+                    <li>
+                        <img src="../img/Icones/PNG/logout (2).png"
+                            alt="icone que representa a funcionalidade de logout">
+                        <a href="#">Sair</a>
+                    </li>
                 </ul>
             </nav>
-        </div>
     </aside>
-    <main>
-        <div class="container_busca">
-            <input type="search" name="busca" placeholder="Digite o que você procura">
-            <span class="search-icon"></span>
+    <main class="item main">
+        <div class="bloco_pesquisa">
+            <div class="container_pesquisa_input item_main pesquisa">
+                <input type="search" name="pesquisa" placeholder="Digite o que você procura">
+                <span class="search-icon"></span>
+            </div>
+            <div class="container_pesquisa_tag">
+                <div><span class="tag selected">Front-end<span class="close-btn selected">&times;</span></span></div>
+                <div><span class="tag">React<span class="close-btn" style="display: none;">&times;</span></span></div>
+                <div><span class="tag">Acessibilidade<span class="close-btn"
+                            style="display: none;">&times;</span></span></div>
+            </div>
+        </div>
+        <div class="bloco_feed_ordenacao ordenacao">
+            <select id="ordenacao_feed">
+                <option value="desc">Mais novo para o mais antigo</option>
+                <option value="asc">Mais antigo para o mais novo</option>
+            </select>
+        </div>
+        <div class="bloco_feed_feed feed">
+            <div class="card">
+                <img src="../img/Imagens Cards/card_feed_1.png" class="img_card"
+                    alt="imagem de um projeto de app mobile">
+                <div class="card_descricao">
+                    <h2>Titulo do post em duas linhas</h2>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        voluptatum
+                        deleniti atque corrupti quos dolores et quas molestias excepturi sint.</p>
+                    <div class="container_tags">
+                        <div><span class="tag_card">React<span class="close-btn">&times;</span></span></div>
+                        <div><span class="tag_card">React<span class="close-btn">&times;</span></span></div>
+                        <div><span class="tag_card">React<span class="close-btn">&times;</span></span></div>
+                        <div><span class="tag_card">React<span class="close-btn"
+                                    style="display: none;">&times;</span></span></div>
+                    </div>
+                    <div class="container_detalhes">
+                        <div class="detalhes_card">
+                            <div class="detalhes">
+                                <img src="../img/Icones/PNG/code.png" alt="simbolos de menor e maior simbolizando code">
+                                <p>12</p>
+                            </div>
+                            <div class="detalhes">
+                                <img src="../img/Icones/PNG/share.png"
+                                    alt="simbolos de menor e maior simbolizando code">
+                                <p>12</p>
+                            </div>
+                            <div class="detalhes">
+                                <img src="../img/Icones/PNG/chat (3).png"
+                                    alt="simbolos de menor e maior simbolizando code">
+                                <p>12</p>
+                            </div>
+                        </div>
+                        <div class="container_perfil">
+                            <img src="../img/Imagens Gerais/Avatar (4).png"
+                                alt=" foto de perfil do usuário que postou o projeto">
+                            <p>@julio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/Imagens Cards/card_feed_2.png" class="img_card"
+                    alt="imagem de um projeto de app mobile">
+                <div class="card_descricao">
+                    <h2>Titulo do post em duas linhas</h2>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        voluptatum
+                        deleniti atque corrupti quos dolores et quas molestias excepturi sint.</p>
+                    <div class="container_tags">
+                        <div><span class="tag_card">React<span class="close-btn">&times;</span></span></div>
+                        <div><span class="tag_card">React<span class="close-btn">&times;</span></span></div>
+                        <div><span class="tag_card">React<span class="close-btn">&times;</span></span></div>
+                        <div><span class="tag_card">React<span class="close-btn"
+                                    style="display: none;">&times;</span></span></div>
+                    </div>
+                    <div class="container_detalhes">
+                        <div class="detalhes_card">
+                            <div class="detalhes">
+                                <img src="../img/Icones/PNG/code.png" alt="simbolos de menor e maior simbolizando code">
+                                <p>12</p>
+                            </div>
+                            <div class="detalhes">
+                                <img src="../img/Icones/PNG/share.png"
+                                    alt="simbolos de menor e maior simbolizando code">
+                                <p>12</p>
+                            </div>
+                            <div class="detalhes">
+                                <img src="../img/Icones/PNG/chat (3).png"
+                                    alt="simbolos de menor e maior simbolizando code">
+                                <p>12</p>
+                            </div>
+                        </div>
+                        <div class="container_perfil">
+                            <img src="../img/Imagens Gerais/Avatar (4).png"
+                                alt=" foto de perfil do usuário que postou o projeto">
+                            <p>@julio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/Imagens Cards/card_feed_3.png" class="img_card"
+                    alt="imagem de um projeto de app mobile">
+                <div class="card_descricao">
+                    <h2>Titulo do post em duas linhas</h2>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        voluptatum
+                        deleniti atque corrupti quos dolores et quas molestias excepturi sint.</p>
+                    <div class="container_tags">
+                        <div><span class="tag_card">React<span class="close-btn">&times;</span></span></div>
+                        <div><span class="tag_card">React<span class="close-btn">&times;</span></span></div>
+                        <div><span class="tag_card">React<span class="close-btn">&times;</span></span></div>
+                        <div><span class="tag_card">React<span class="close-btn"
+                                    style="display: none;">&times;</span></span></div>
+                    </div>
+                    <div class="container_detalhes">
+                        <div class="detalhes_card">
+                            <div class="detalhes">
+                                <img src="../img/Icones/PNG/code.png" alt="simbolos de menor e maior simbolizando code">
+                                <p>12</p>
+                            </div>
+                            <div class="detalhes">
+                                <img src="../img/Icones/PNG/share.png"
+                                    alt="simbolos de menor e maior simbolizando code">
+                                <p>12</p>
+                            </div>
+                            <div class="detalhes">
+                                <img src="../img/Icones/PNG/chat (3).png"
+                                    alt="simbolos de menor e maior simbolizando code">
+                                <p>12</p>
+                            </div>
+                        </div>
+                        <div class="container_perfil">
+                            <img src="../img/Imagens Gerais/Avatar (4).png"
+                                alt=" foto de perfil do usuário que postou o projeto">
+                            <p>@julio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/Imagens Cards/card_feed_4.png" class="img_card"
+                    alt="imagem de um projeto de app mobile">
+                <div class="card_descricao">
+                    <h2>Titulo do post em duas linhas</h2>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        voluptatum
+                        deleniti atque corrupti quos dolores et quas molestias excepturi sint.</p>
+                    <div class="container_tags">
+                        <div><span class="tag_card">React<span class="close-btn">&times;</span></span></div>
+                        <div><span class="tag_card">React<span class="close-btn">&times;</span></span></div>
+                        <div><span class="tag_card">React<span class="close-btn">&times;</span></span></div>
+                        <div><span class="tag_card">React<span class="close-btn"
+                                    style="display: none;">&times;</span></span></div>
+                    </div>
+                    <div class="container_detalhes">
+                        <div class="detalhes_card">
+                            <div class="detalhes">
+                                <img src="../img/Icones/PNG/code.png" alt="simbolos de menor e maior simbolizando code">
+                                <p>12</p>
+                            </div>
+                            <div class="detalhes">
+                                <img src="../img/Icones/PNG/share.png"
+                                    alt="simbolos de menor e maior simbolizando code">
+                                <p>12</p>
+                            </div>
+                            <div class="detalhes">
+                                <img src="../img/Icones/PNG/chat (3).png"
+                                    alt="simbolos de menor e maior simbolizando code">
+                                <p>12</p>
+                            </div>
+                        </div>
+                        <div class="container_perfil">
+                            <img src="../img/Imagens Gerais/Avatar (4).png"
+                                alt=" foto de perfil do usuário que postou o projeto">
+                            <p>@julio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/Imagens Cards/card_feed_5.png" class="img_card"
+                    alt="imagem de um projeto de app mobile">
+                <div class="card_descricao">
+                    <h2>Titulo do post em duas linhas</h2>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        voluptatum
+                        deleniti atque corrupti quos dolores et quas molestias excepturi sint.</p>
+                    <div class="container_tags">
+                        <div><span class="tag_card">React<span class="close-btn">&times;</span></span></div>
+                        <div><span class="tag_card">React<span class="close-btn">&times;</span></span></div>
+                        <div><span class="tag_card">React<span class="close-btn">&times;</span></span></div>
+                        <div><span class="tag_card">React<span class="close-btn"
+                                    style="display: none;">&times;</span></span></div>
+                    </div>
+                    <div class="container_detalhes">
+                        <div class="detalhes_card">
+                            <div class="detalhes">
+                                <img src="../img/Icones/PNG/code.png" alt="simbolos de menor e maior simbolizando code">
+                                <p>12</p>
+                            </div>
+                            <div class="detalhes">
+                                <img src="../img/Icones/PNG/share.png"
+                                    alt="simbolos de menor e maior simbolizando code">
+                                <p>12</p>
+                            </div>
+                            <div class="detalhes">
+                                <img src="../img/Icones/PNG/chat (3).png"
+                                    alt="simbolos de menor e maior simbolizando code">
+                                <p>12</p>
+                            </div>
+                        </div>
+                        <div class="container_perfil">
+                            <img src="../img/Imagens Gerais/Avatar (4).png"
+                                alt=" foto de perfil do usuário que postou o projeto">
+                            <p>@julio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/Imagens Cards/card_feed_6.png" class="img_card"
+                    alt="imagem de um projeto de app mobile">
+                <div class="card_descricao">
+                    <h2>Titulo do post em duas linhas</h2>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        voluptatum
+                        deleniti atque corrupti quos dolores et quas molestias excepturi sint.</p>
+                    <div class="container_tags">
+                        <div><span class="tag_card">React<span class="close-btn">&times;</span></span></div>
+                        <div><span class="tag_card">React<span class="close-btn">&times;</span></span></div>
+                        <div><span class="tag_card">React<span class="close-btn">&times;</span></span></div>
+                        <div><span class="tag_card">React<span class="close-btn"
+                                    style="display: none;">&times;</span></span></div>
+                    </div>
+                    <div class="container_detalhes">
+                        <div class="detalhes_card">
+                            <div class="detalhes">
+                                <img src="../img/Icones/PNG/code.png" alt="simbolos de menor e maior simbolizando code">
+                                <p>12</p>
+                            </div>
+                            <div class="detalhes">
+                                <img src="../img/Icones/PNG/share.png"
+                                    alt="simbolos de menor e maior simbolizando code">
+                                <p>12</p>
+                            </div>
+                            <div class="detalhes">
+                                <img src="../img/Icones/PNG/chat (3).png"
+                                    alt="simbolos de menor e maior simbolizando code">
+                                <p>12</p>
+                            </div>
+                        </div>
+                        <div class="container_perfil">
+                            <img src="../img/Imagens Gerais/Avatar (4).png"
+                                alt=" foto de perfil do usuário que postou o projeto">
+                            <p>@julio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </main>
 </body>
